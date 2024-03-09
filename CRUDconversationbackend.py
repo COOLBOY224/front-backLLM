@@ -40,7 +40,7 @@ async def initialize_beanie(client: AsyncIOMotorClient):
     await init_beanie(database=client[MONGO_DB], document_models=[Conversation])
 
 # OpenAI API key
-OPENAI_API_KEY = "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"
+OPENAI_API_KEY = $OPENAI_KEY
 
 # Initialize FastAPI app
 app = FastAPI()
